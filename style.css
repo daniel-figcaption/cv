@@ -337,8 +337,14 @@ address {
   border: 1px solid;
   font-size: 0.9em;
   line-height: 1.25;
-  padding: calc(var(--pfr) * 0.5);
+  padding: calc(var(--pfr) * 0.75) calc(var(--pfr) * 0.5);
   text-align: center;
+}
+
+.c-fun-fact__link {
+  display: block;
+  font-size: 0.75em;
+  margin-top: calc(var(--pfr) * 0.5);
 }
 
 .c-role-list {
