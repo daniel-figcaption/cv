@@ -3,438 +3,695 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CV</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Lusitana:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600&family=Stoke:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Daniel O'Connor &ndash; CV</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
     <div class="c-layout">
-      <div class="c-layout__page">
-        <header class="c-header">
-          <address class="c-header__contact">
-            <p class="c-header__contact-item">
-              <a class="c-header__phone" href="tel:+64273905537"
-                >027 390 5537</a
-              >
-            </p>
-            <p class="c-header__contact-item">
-              <a
-                class="c-header__email"
-                href="mailto:daniel@figcaption.com"
-                target="_blank"
-                >daniel@figcaption.com</a
-              >
-            </p>
-            <p class="c-header__contact-item">
-              <a
-                class="c-header__website"
-                href="https://figcaption.com/cv"
-                target="_blank"
-                rel="noreferrer"
-                >figcaption.com/cv</a
-              >
-            </p>
-          </address>
-          <h1 class="c-header__title mb5">Daniel <br />O'Connor</h1>
-          <p class="c-header__subtitle">Experienced Front-End Web Developer</p>
-        </header>
-
-        <div class="c-bio">
-          <p>
-            Christchurch-based with 10 years full-stack experience turning ideas
-            into fully-fledged web apps &amp; websites, from the ground up.
-          </p>
-        </div>
-
-        <div class="c-cols">
-          <div class="c-cols__main">
-            <section class="c-section">
-              <h2 class="c-section__title tr">Work History</h2>
-              <ul class="c-role-list">
-                <li class="c-role-list__item">
+      <canvas class="c-layout__bg-canvas" id="bg-canvas" resize></canvas>
+      <ol class="c-layout__page-set o-page-set">
+        <li class="o-page-set__item">
+          <div class="c-page">
+            <header class="c-page__header c-header">
+              <h1 class="c-header__heading">Daniel <br />O'Connor</h1>
+              <address class="c-header__contact-info c-contact-info">
+                <p class="c-contact-info__item">
+                  <a class="c-contact-info__phone" href="tel:+14387796838"
+                    >438 779 6838</a
+                  >
+                </p>
+                <p class="c-contact-info__item">
+                  <a
+                    class="c-contact-info__link"
+                    href="mailto:daniel@figcaption.com"
+                    >daniel@figcaption.com</a
+                  >
+                </p>
+                <p class="c-contact-info__item">Montréal, Canada</p>
+                <p class="c-contact-info__item">
+                  <a
+                    class="c-contact-info__link"
+                    href="https://www.linkedin.com/in/daniel-w-oconnor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >linkedin.com/in/daniel-w-oconnor</a
+                  >
+                </p>
+              </address>
+              <p class="c-header__subheading">Senior Frontend Developer</p>
+            </header>
+            <div class="c-page__summary c-summary">
+              <p class="c-summary__paragraph">
+                Montréal-based with 10 years full-stack experience turning ideas
+                into fully-fledged web apps & websites, from the ground up.
+              </p>
+            </div>
+            <div class="c-page__cols c-cols">
+              <div class="c-cols__main c-cols__main--pad-top">
+                <section class="c-section c-section--grow">
+                  <h2
+                    class="c-section__title c-section__title--right c-section__title--space-below"
+                  >
+                    Expériences professionnelles
+                  </h2>
+                  <ul class="c-role-list c-role-list--grow">
+                    <li class="c-role-list__item">
+                      <section class="c-role">
+                        <h3
+                          class="c-role__organisation-name c-role__organisation-name--lg"
+                        >
+                          Batch Ltd.
+                        </h3>
+                        <ul class="c-role__meta-set c-meta-set">
+                          <li class="c-meta-set__item">
+                            <a
+                              class="c-meta-set__link"
+                              href="https://www.batch.nz/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >batch.nz</a
+                            >
+                          </li>
+                          <li class="c-meta-set__item">
+                            Jan 2023&thinsp;&ndash;&thinsp;May 2023
+                          </li>
+                          <li class="c-meta-set__item">New Zealand</li>
+                        </ul>
+                        <ul class="c-list">
+                          <li class="c-list__item">
+                            Full website development in React using Next.js,
+                            TypeScript and TailwindCSS.
+                          </li>
+                          <li class="c-list__item">
+                            Developed a custom integration for the CMS to
+                            interface with Next.js through GraphQL.
+                          </li>
+                        </ul>
+                      </section>
+                    </li>
+                    <li class="c-role-list__item c-role-list__item--to-bottom">
+                      <section class="c-role">
+                        <h3
+                          class="c-role__organisation-name c-role__organisation-name--lg"
+                        >
+                          NV Interactive
+                        </h3>
+                        <ul class="c-role__meta-set c-meta-set">
+                          <li class="c-meta-set__item">
+                            <a
+                              class="c-meta-set__link"
+                              href="https://www.nvinteractive.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >nvinteractive.com</a
+                            >
+                          </li>
+                          <li class="c-meta-set__item">
+                            2016&thinsp;&ndash;&thinsp;2022
+                          </li>
+                          <li class="c-meta-set__item">New Zealand</li>
+                        </ul>
+                        <ul class="c-list">
+                          <li class="c-list__item">
+                            Total front-end development of websites, from CSS
+                            &amp; HTML, to JavaScript frameworks, and CMS
+                            integration in .NET/C#.
+                          </li>
+                          <li class="c-list__item">
+                            Hiring, training, mentoring, and reviewing the code
+                            of junior developers.
+                          </li>
+                          <li class="c-list__item">
+                            Identifying UX issues and working with the design
+                            team to negotiate solutions.
+                          </li>
+                          <li class="c-list__item">
+                            Translating design files into flexible, responsive
+                            UIs that follow web best practices.
+                          </li>
+                          <li class="c-list__item">
+                            Supporting the dev team through the creation of
+                            company front-end coding standards.
+                          </li>
+                          <li class="c-list__item">
+                            Promoting code reuse through the creation of a UI
+                            component library.
+                          </li>
+                          <li class="c-list__item">
+                            Set up the company's first React Native project.
+                          </li>
+                          <li class="c-list__item">
+                            Formulating project plans from design briefs and
+                            breaking them down into steps for the whole team.
+                          </li>
+                        </ul>
+                      </section>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div class="c-cols__side c-cols__side--pad-top">
+                <section class="c-section c-section--space-below">
+                  <h2 class="c-section__title c-section__title--space-below">
+                    Compétences web
+                  </h2>
+                  <ul class="c-skill-cloud">
+                    <li class="c-skill-cloud__item" data-importance="5">
+                      React
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="5">
+                      Redux
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="4">
+                      TypeScript
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="4">
+                      Next.js
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="4">CSS</li>
+                    <li class="c-skill-cloud__item" data-importance="3">UX</li>
+                    <li class="c-skill-cloud__item" data-importance="3">
+                      JavaScript
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="2">
+                      Build Tools
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="2">
+                      Accessibility
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="2">
+                      TailwindCSS
+                    </li>
+                    <li class="c-skill-cloud__item" data-importance="2">C#</li>
+                    <li class="c-skill-cloud__item" data-importance="2">PHP</li>
+                    <li class="c-skill-cloud__item" data-importance="2">
+                      Responsive&nbsp;Design
+                    </li>
+                  </ul>
+                </section>
+                <section class="c-section c-section--grow">
+                  <h2 class="c-section__title c-section__title--space-below">
+                    Langues
+                  </h2>
+                  <dl class="c-lang-list">
+                    <div class="c-lang-list__item">
+                      <dt class="c-lang-list__header">
+                        <svg
+                          class="c-lang-list__icon"
+                          width="512"
+                          height="512"
+                          viewBox="0 0 512 512"
+                        >
+                          <mask id="a">
+                            <circle cx="256" cy="256" r="256" fill="#fff" />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#eee"
+                              d="m0 0 8 22-8 23v23l32 54-32 54v32l32 48-32 48v32l32 54-32 54v68l22-8 23 8h23l54-32 54 32h32l48-32 48 32h32l54-32 54 32h68l-8-22 8-23v-23l-32-54 32-54v-32l-32-48 32-48v-32l-32-54 32-54V0l-22 8-23-8h-23l-54 32-54-32h-32l-48 32-48-32h-32l-54 32L68 0H0z"
+                            />
+                            <path
+                              fill="#0052b4"
+                              d="M336 0v108L444 0Zm176 68L404 176h108zM0 176h108L0 68ZM68 0l108 108V0Zm108 512V404L68 512ZM0 444l108-108H0Zm512-108H404l108 108Zm-68 176L336 404v108z"
+                            />
+                            <path
+                              fill="#d80027"
+                              d="M0 0v45l131 131h45L0 0zm208 0v208H0v96h208v208h96V304h208v-96H304V0h-96zm259 0L336 131v45L512 0h-45zM176 336 0 512h45l131-131v-45zm160 0 176 176v-45L381 336h-45z"
+                            />
+                          </g>
+                        </svg>
+                        English
+                      </dt>
+                      <dd class="c-lang-list__description">Native</dd>
+                    </div>
+                    <div class="c-lang-list__item">
+                      <dt class="c-lang-list__header">
+                        <svg
+                          class="c-lang-list__icon"
+                          width="512"
+                          height="512"
+                          viewBox="0 0 512 512"
+                        >
+                          <mask id="a">
+                            <circle cx="256" cy="256" r="256" fill="#fff" />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#eee"
+                              d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z"
+                            />
+                            <path fill="#6da544" d="M0 0h167v512H0z" />
+                            <path fill="#d80027" d="M345 0h167v512H345z" />
+                          </g>
+                        </svg>
+                        Italian
+                      </dt>
+                    </div>
+                    <div class="c-lang-list__item">
+                      <dt class="c-lang-list__header">
+                        <svg
+                          class="c-lang-list__icon"
+                          width="512"
+                          height="512"
+                          viewBox="0 0 512 512"
+                        >
+                          <mask id="a">
+                            <circle cx="256" cy="256" r="256" fill="#fff" />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#eee"
+                              d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z"
+                            />
+                            <path fill="#0052b4" d="M0 0h167v512H0z" />
+                            <path fill="#d80027" d="M345 0h167v512H345z" />
+                          </g>
+                        </svg>
+                        French&thinsp;*
+                      </dt>
+                      <dd class="c-lang-list__description">
+                        <strong>Beginner</strong>, currently taking full-time
+                        classes in Montréal.
+                      </dd>
+                    </div>
+                  </dl>
+                </section>
+                <p class="c-fun-fact">This CV was coded in HTML &amp; CSS!</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="o-page-set__item">
+          <div class="c-page">
+            <div class="c-page__cols c-cols">
+              <div class="c-cols__main c-cols__main--pad-bottom">
+                <section class="c-section c-section--grow">
+                  <ul class="c-role-list">
+                    <li class="c-role-list__item">
+                      <section class="c-role">
+                        <h3 class="c-role__organisation-name">Avatar</h3>
+                        <ul class="c-role__meta-set c-meta-set">
+                          <li class="c-meta-set__item">
+                            2015&thinsp;&ndash;&thinsp;2016
+                          </li>
+                          <li class="c-meta-set__item">New Zealand</li>
+                        </ul>
+                        <ul class="c-list">
+                          <li class="c-list__item">
+                            Sole developer responsible for accurately
+                            translating designs into responsive WordPress
+                            websites.
+                          </li>
+                          <li class="c-list__item">
+                            Designing sites in Photoshop & Illustrator.
+                          </li>
+                        </ul>
+                      </section>
+                    </li>
+                    <li class="c-role-list__item">
+                      <section class="c-role">
+                        <h3 class="c-role__organisation-name">
+                          Austin Digital
+                        </h3>
+                        <ul class="c-role__meta-set c-meta-set">
+                          <li class="c-meta-set__item">
+                            2013&thinsp;&ndash;&thinsp;2015
+                          </li>
+                          <li class="c-meta-set__item">New Zealand</li>
+                        </ul>
+                        <ul class="c-list">
+                          <li class="c-list__item">
+                            Developing over 30 small-scale websites from scratch
+                            and holding tutorials with clients.
+                          </li>
+                        </ul>
+                      </section>
+                    </li>
+                  </ul>
+                </section>
+                <section class="c-section">
+                  <h2
+                    class="c-section__title c-section__title--right c-section__title--space-below"
+                  >
+                    Formation
+                  </h2>
                   <section class="c-role">
-                    <h3 class="c-role__company c-role__company--lg">
-                      NV Interactive
+                    <h3 class="c-role__organisation-name">
+                      BSc in Computer Science
                     </h3>
-                    <p class="c-role__details">
-                      2016&thinsp;&ndash;&thinsp;Present&emsp;&middot;&emsp;Christchurch
-                    </p>
-                    <ul class="c-list">
-                      <li class="c-list__item">
-                        Total front-end development of websites, from CSS &amp;
-                        HTML through to modern JavaScript and CMS integration in
-                        C#.
+                    <ul class="c-role__meta-set c-meta-set">
+                      <li class="c-meta-set__item c-meta-set__item--bold">
+                        University of Auckland
                       </li>
-                      <li class="c-list__item">
-                        Training &amp; managing junior developers.
-                      </li>
-                      <li class="c-list__item">
-                        Formulating the blueprints (Information Architecture)
-                        for projects.
-                      </li>
-                      <li class="c-list__item">
-                        Supporting the development team through the creation of
-                        company coding standards.
-                      </li>
-                      <li class="c-list__item">
-                        Identifying design/UX issues and approaching the brand
-                        expert to negotiate a solution.
+                      <li class="c-meta-set__item">
+                        2010&thinsp;&ndash;&thinsp;2013
                       </li>
                     </ul>
-                    <div class="c-client-cloud">
-                      <h4 class="c-client-cloud__title">Working alongside:</h4>
-                      <ul class="c-client-cloud__list">
-                        <li class="c-client-cloud__item">
-                          Christchurch Airport
-                        </li>
-                        <li class="c-client-cloud__item">Blackcaps</li>
-                        <li class="c-client-cloud__item">Intergen</li>
-                        <li class="c-client-cloud__item">Auckland Pride</li>
-                        <li class="c-client-cloud__item">
-                          R&amacr;t&amacr; Foundation
-                        </li>
-                        <li class="c-client-cloud__item">
-                          World Buskers Festival
-                        </li>
-                        <li class="c-client-cloud__item">Allied Telesis</li>
-                        <li class="c-client-cloud__item">
-                          Heritage New Zealand
-                        </li>
-                        <li class="c-client-cloud__item">Ravensdown</li>
-                        <li class="c-client-cloud__item">David Reid Homes</li>
-                        <li class="c-client-cloud__item">Heartland Bank</li>
-                      </ul>
-                    </div>
                   </section>
+                </section>
+              </div>
+              <div
+                class="c-cols__side c-cols__side--pad-bottom c-cols__side--align-bottom"
+              >
+                <section class="c-section">
+                  <h2 class="c-section__title c-section__title--space-below">
+                    Permis de travail
+                  </h2>
+                  <p class="c-section__description">
+                    I hold the right to work anywhere in Canada through an open
+                    work permit.
+                  </p>
+                </section>
+              </div>
+            </div>
+            <section class="c-portfolio c-page__portfolio">
+              <h2 class="c-portfolio__title">Portfolio</h2>
+              <ul class="c-project-list c-portfolio__project-list">
+                <li class="c-project-list__item">
+                  <article class="c-project">
+                    <div class="c-project__thumbnail">
+                      <img
+                        class="c-project__thumbnail-image"
+                        src="images/matisse-logo.png"
+                        alt="Matisse logo"
+                        width="240"
+                        height="240"
+                      />
+                    </div>
+                    <div class="c-project__text-content">
+                      <h3 class="c-project__title">Matisse</h3>
+                      <ul class="c-project__meta-set c-meta-set">
+                        <li class="c-meta-set__item">
+                          <a
+                            class="c-meta-set__link"
+                            href="https://matisse.co.nz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >matisse.co.nz</a
+                          >
+                        </li>
+                        <li class="c-meta-set__item">2021</li>
+                      </ul>
+                      <p class="c-project__description">
+                        Full front-end dev and CMS integration, with
+                        1,000-strong product inventory.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="c-project-list__item">
+                  <article class="c-project">
+                    <div class="c-project__thumbnail">
+                      <img
+                        class="c-project__thumbnail-image"
+                        src="images/opes-partners-logo.png"
+                        alt="Opes Partners logo"
+                        width="240"
+                        height="240"
+                      />
+                    </div>
+                    <div class="c-project__text-content">
+                      <h3 class="c-project__title">Opes Partners</h3>
+                      <ul class="c-project__meta-set c-meta-set">
+                        <li class="c-meta-set__item">
+                          <a
+                            class="c-meta-set__link"
+                            href="https://www.opespartners.co.nz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >opespartners.co.nz</a
+                          >
+                        </li>
+                        <li class="c-meta-set__item">2023</li>
+                      </ul>
+                      <p class="c-project__description">
+                        Full front-end dev in React with Next.js &amp;
+                        TypeScript, integrating with Craft CMS. Media-rich with
+                        SEO focus.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="c-project-list__item">
+                  <article class="c-project">
+                    <div class="c-project__thumbnail">
+                      <img
+                        class="c-project__thumbnail-image"
+                        src="images/nz-post-app-icon.png"
+                        alt="NZ Post app icon"
+                        width="240"
+                        height="240"
+                      />
+                    </div>
+                    <div class="c-project__text-content">
+                      <h3 class="c-project__title">NZ Post app</h3>
+                      <ul class="c-project__meta-set c-meta-set">
+                        <li class="c-meta-set__item">iOS/Android</li>
+                        <li class="c-meta-set__item">2022</li>
+                      </ul>
+                      <p class="c-project__description">
+                        Parcel tracking utility. Setup for core React Native
+                        components based on design specs.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="c-project-list__item">
+                  <article class="c-project">
+                    <div class="c-project__thumbnail">
+                      <img
+                        class="c-project__thumbnail-image"
+                        src="images/decide-graphic.png"
+                        alt="Two speech bubbles"
+                        width="240"
+                        height="240"
+                      />
+                    </div>
+                    <div class="c-project__text-content">
+                      <h3 class="c-project__title">
+                        Family Planning NZ &mdash; DECIDE.org.nz
+                      </h3>
+                      <ul class="c-project__meta-set c-meta-set">
+                        <li class="c-meta-set__item">
+                          <a
+                            class="c-meta-set__link"
+                            href="https://decide.org.nz/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >decide.org.nz</a
+                          >
+                        </li>
+                        <li class="c-meta-set__item">2022</li>
+                      </ul>
+                      <p class="c-project__description">
+                        Ministry of Health initiative providing new abortion
+                        telehealth services. Full front-end dev and Umbraco CMS
+                        integration in C#.
+                      </p>
+                    </div>
+                  </article>
                 </li>
               </ul>
-
-              <section class="c-role">
-                <h3 class="c-role__company">Avatar</h3>
-                <p class="c-role__details">
-                  2015&thinsp;&ndash;&thinsp;2016&emsp;&middot;&emsp;Christchurch
-                </p>
-                <ul class="c-list">
-                  <li class="c-list__item">
-                    Creating successful web designs in Photoshop &amp;
-                    Illustrator.
-                  </li>
-                  <li class="c-list__item">
-                    Sole developer responsible for integrating designs into
-                    working WordPress websites.
-                  </li>
-                </ul>
-              </section>
-            </section>
-          </div>
-          <div class="c-cols__side">
-            <section class="c-section">
-              <h2 class="c-section__title">Skills of Interest</h2>
-              <div class="c-skill-cloud">
-                <ul class="c-skill-cloud__list">
-                  <li class="c-skill-cloud__item">React</li>
-                  <li class="c-skill-cloud__item">Redux</li>
-                  <li class="c-skill-cloud__item">UX</li>
-                  <li class="c-skill-cloud__item">SASS</li>
-                  <li class="c-skill-cloud__item">Git</li>
-                  <li class="c-skill-cloud__item">Dynamic SVG</li>
-                  <li class="c-skill-cloud__item">Accessible HTML</li>
-                  <li class="c-skill-cloud__item">Static Site Generators</li>
-                </ul>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="c-layout__page">
-        <div class="c-cols">
-          <div class="c-cols__main">
-            <section class="c-section">
-              <section class="c-role">
-                <h3 class="c-role__company">Austin Digital</h3>
-                <p class="c-role__details">
-                  2013&thinsp;&ndash;&thinsp;2015&emsp;&middot;&emsp;Auckland
-                </p>
-                <ul class="c-list">
-                  <li class="c-list__item">
-                    Successfully developing over 30 websites and conducting
-                    client tutorials on how to manage their new sites.
-                  </li>
-                </ul>
-              </section>
-            </section>
-            <section class="c-section mb5">
-              <h2 class="c-section__title tr mb1">Education</h2>
-              <section class="c-role">
-                <h3 class="c-role__company">BSc in Computer Science</h3>
-                <p class="c-role__details">
-                  <b>University of Auckland</b
-                  >&emsp;&middot;&emsp;2010&thinsp;&ndash;&thinsp;2013
-                </p>
-              </section>
-            </section>
-            <section class="c-section">
-              <h2 class="c-section__title tr mb2">Portfolio</h2>
-              <section class="c-example">
-                <div class="c-example__thumbnail"></div>
-                <div class="c-example__info">
-                  <h3 class="c-example__title">
-                    <strong>Matisse</strong> website
-                  </h3>
-                  <p class="c-example__details">
-                    <a
-                      class="c-example__url"
-                      href="https://matisse.co.nz/"
-                      target="_blank"
-                      rel="noreferrer"
-                      >matisse.co.nz</a
-                    ><span>&emsp;&middot;&emsp;2021</span>
-                  </p>
-                  <p class="c-example__description">
-                    Full front-end dev &amp; information architecture, Umbraco
-                    CMS integration, with 1,000-strong product inventory.
-                  </p>
-                </div>
-              </section>
-              <section class="c-example">
-                <div class="c-example__thumbnail"></div>
-                <div class="c-example__info">
-                  <h3 class="c-example__title">
-                    <strong>Christchurch Airport</strong> website
-                  </h3>
-                  <p class="c-example__details">
-                    <a
-                      class="c-example__url"
-                      href="https://www.christchurchairport.co.nz/"
-                      target="_blank"
-                      rel="noreferrer"
-                      >christchurchairport.co.nz</a
-                    ><span>&emsp;&middot;&emsp;2019</span>
-                  </p>
-                  <p class="c-example__description">
-                    Full front-end dev in collaboration with Intergen.
-                  </p>
-                </div>
-              </section>
-              <section class="c-example">
-                <div class="c-example__thumbnail"></div>
-                <div class="c-example__info">
-                  <h3 class="c-example__title">
-                    <strong>ICC Data Capture</strong> online tool
-                  </h3>
-                  <p class="c-example__details">
-                    <a
-                      class="c-example__url"
-                      href="https://www.figcaption.com/cv/icc"
-                      target="_blank"
-                      rel="noreferrer"
-                      >www.figcaption.com/cv/icc</a
-                    ><span>&emsp;&middot;&emsp;2020</span>
-                  </p>
-                  <p class="c-example__description">
-                    Full UI dev of a web app for the International Cricket
-                    Council.
-                  </p>
-                </div>
-              </section>
-              <section class="c-example mb3">
-                <div class="c-example__thumbnail"></div>
-                <div class="c-example__info">
-                  <h3 class="c-example__title">
-                    <strong>Vegetarians.co.nz</strong> website
-                  </h3>
-                  <p class="c-example__details">
-                    <a
-                      class="c-example__url"
-                      href="https://www.vegetarians.co.nz/"
-                      target="_blank"
-                      rel="noreferrer"
-                      >www.vegetarians.co.nz</a
-                    ><span>&emsp;&middot;&emsp;2016</span>
-                  </p>
-                  <p class="c-example__description">
-                    Full site creative redesign, coding, and WordPress
-                    integration.
-                  </p>
-                </div>
-              </section>
-              <section>
-                <section class="c-url-list">
-                  <h3 class="c-url-list__title">
-                    Supportive<br />
-                    Front-End Dev
-                  </h3>
-                  <ul class="c-url-list__list">
-                    <li class="c-url-list__item">
+              <div class="c-portfolio__catalogue">
+                <dl class="c-catalogue">
+                  <div class="c-catalogue__section">
+                    <dt class="c-catalogue__heading">Full Front-End Dev</dt>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://www.christchurchnz.com/"
                         target="_blank"
-                        rel="noreferrer"
+                        href="https://aucklandpride.org.nz/"
+                        rel="noopener noreferrer"
+                        >aucklandpride.org.nz</a
+                      >
+                    </dd>
+                    <dd class="c-catalogue__item">
+                      NV Play &ndash;
+                      <a
+                        target="_blank"
+                        href="https://play06w2-staging.azurewebsites.net/"
+                        rel="noopener noreferrer"
+                        >tinyurl.com/nvplayv2</a
+                      >
+                    </dd>
+                    <dd class="c-catalogue__item">
+                      <a
+                        target="_blank"
+                        href="https://www.phwealth.co.nz/"
+                        rel="noopener noreferrer"
+                        >phwealth.co.nz</a
+                      >
+                      (2021)
+                    </dd>
+                    <dd class="c-catalogue__item">
+                      <a
+                        target="_blank"
+                        href="https://www.moodscroller.com/"
+                        rel="noopener noreferrer"
+                        >moodscroller.com</a
+                      >
+                      (2023)
+                    </dd>
+                    <dd class="c-catalogue__item">
+                      <a
+                        target="_blank"
+                        href="https://www.apolloprojects.co.nz/"
+                        rel="noopener noreferrer"
+                        >apolloprojects.co.nz</a
+                      >
+                      (2020)
+                    </dd>
+                    <dd class="c-catalogue__item">
+                      <a
+                        target="_blank"
+                        href="https://www.christchurchairport.co.nz/"
+                        rel="noopener noreferrer"
+                        >christchurchairport.co.nz</a
+                      >
+                      (2019)
+                    </dd>
+                  </div>
+
+                  <div class="c-catalogue__section">
+                    <dt class="c-catalogue__heading">
+                      Supportive Front-End Dev
+                    </dt>
+                    <dd class="c-catalogue__item">
+                      <a
+                        target="_blank"
+                        href="https://www.christchurchnz.com/"
+                        rel="noopener noreferrer"
                         >christchurchnz.com</a
                       >
                       (2019)
-                    </li>
-                    <li class="c-url-list__item">
+                    </dd>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://www.nzc.nz/"
                         target="_blank"
-                        rel="noreferrer"
+                        href="https://www.nzc.nz/"
+                        rel="noopener noreferrer"
                         >nzc.nz</a
                       >
                       (2018)
-                    </li>
-                    <li class="c-url-list__item">
+                    </dd>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://ratafoundation.org.nz/"
                         target="_blank"
-                        rel="noreferrer"
+                        href="https://ratafoundation.org.nz/"
+                        rel="noopener noreferrer"
                         >ratafoundation.org.nz</a
                       >
                       (2019)
-                    </li>
-                    <li class="c-url-list__item">
+                    </dd>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://www.tupu.nz/"
                         target="_blank"
-                        rel="noreferrer"
+                        href="https://www.tupu.nz/"
+                        rel="noopener noreferrer"
                         >tupu.nz</a
                       >
                       (2020)
-                    </li>
-                  </ul>
-                </section>
-                <section class="c-url-list">
-                  <h3 class="c-url-list__title">
-                    Full<br />
-                    Front-End Dev
-                  </h3>
-                  <ul class="c-url-list__list">
-                    <li class="c-url-list__item">
+                    </dd>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://www.phwealth.co.nz/"
                         target="_blank"
-                        rel="noreferrer"
-                        >phwealth.co.nz</a
+                        href="https://wolfbrook.co.nz/"
+                        rel="noopener noreferrer"
+                        >wolfbrook.co.nz</a
                       >
-                    </li>
-                    <li class="c-url-list__item">
+                      (2022)
+                    </dd>
+                  </div>
+
+                  <div class="c-catalogue__section">
+                    <dt class="c-catalogue__heading">
+                      Creative Design &amp; Front-End Dev
+                    </dt>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://student-horizons.com/"
                         target="_blank"
-                        rel="noreferrer"
-                        >student-horizons.com</a
-                      >
-                    </li>
-                    <li class="c-url-list__item">
-                      <a
-                        class="c-url-list__url"
-                        href="https://www.themepro.co.nz/"
-                        target="_blank"
-                        rel="noreferrer"
-                        >themepro.co.nz</a
-                      >
-                    </li>
-                  </ul>
-                </section>
-                <section class="c-url-list">
-                  <h3 class="c-url-list__title">
-                    Creative Design &amp;<br />
-                    Front-End Dev
-                  </h3>
-                  <ul class="c-url-list__list">
-                    <li class="c-url-list__item">
-                      <a
-                        class="c-url-list__url"
                         href="https://www.happycampers.co.nz/"
-                        target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         >happycampers.co.nz</a
                       >
                       (2016)
-                    </li>
-                    <li class="c-url-list__item">
+                    </dd>
+                    <dd class="c-catalogue__item">
                       <a
-                        class="c-url-list__url"
-                        href="https://www.swallowscrossing.co.nz/"
                         target="_blank"
+                        href="https://www.swallowscrossing.co.nz/"
+                        rel="noopener noreferrer"
                         >swallowscrossing.co.nz</a
                       >
                       (2015)
-                    </li>
-                  </ul>
-                </section>
-              </section>
+                    </dd>
+                  </div>
+                </dl>
+                <p class="c-portfolio__supplement">
+                  Many more examples available upon request.
+                </p>
+              </div>
             </section>
           </div>
-          <div class="c-cols__side c-cols__side--ab">
-            <section class="c-section mb5">
-              <h3 class="c-section__title mb3">References</h3>
-              <section class="c-reference">
-                <h4 class="c-reference__name">Nadia Maclaren</h4>
-                <p class="c-reference__role">Former Technical Lead</p>
-                <p class="c-reference__company">NV Interactive</p>
-                <a class="c-reference__phone" href="tel:+64212345678"
-                  >021 234 5678</a
-                >
-                <a
-                  class="c-reference__email"
-                  href="mailto:nadia.maclaren@mycompany.co.nz"
-                  >nadia.maclaren@mycompany.co.nz</a
-                >
-              </section>
-              <section class="c-reference">
-                <h4 class="c-reference__name">Matt de Haan</h4>
-                <p class="c-reference__role">Former Front-End Developer</p>
-                <p class="c-reference__company">NV Interactive</p>
-                <a class="c-reference__phone" href="tel:+64212345678"
-                  >021 234 5678</a
-                >
-                <a
-                  class="c-reference__email"
-                  href="mailto:matt@my-company.co.nz"
-                  >matt@my-company.co.nz</a
-                >
-              </section>
-              <section class="c-reference">
-                <h4 class="c-reference__name">Leo Gardiner</h4>
-                <p class="c-reference__role">Former Developer</p>
-                <p class="c-reference__company">NV Interactive</p>
-                <a class="c-reference__phone" href="tel:+64212345678"
-                  >021 234 5678</a
-                >
-                <a
-                  class="c-reference__email"
-                  href="mailto:leo.gardiner@anothercompany.com"
-                  >leo.gardiner@anothercompany.com</a
-                >
-              </section>
-            </section>
-            <section class="c-section">
-              <h3 class="c-section__title mb2">Contact Me</h3>
-              <section class="c-reference">
-                <a class="c-reference__phone" href="+64273905537"
-                  >027 390 5537</a
-                >
-                <a
-                  class="c-reference__email"
-                  href="mailto:daniel@figcaption.com"
-                  >daniel@figcaption.com</a
-                >
-              </section>
-            </section>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="bg-canvas">
+      var width, height, center;
+      var points = 10;
+      var smooth = true;
+      var path = new Path();
+      var mousePos = view.center / 2;
+      var pathHeight = mousePos.y;
+      path.fillColor = "#c9d8eb";
+      initializePath();
+
+      function initializePath() {
+        center = view.center;
+        width = view.size.width;
+        height = view.size.height / 2;
+        path.segments = [];
+        path.add(view.bounds.bottomLeft);
+        for (var i = 1; i < points; i++) {
+          var point = new Point((width / points) * i, center.y);
+          path.add(point);
+        }
+        path.add(view.bounds.bottomRight);
+        path.fullySelected = true;
+      }
+
+      function onFrame(event) {
+        pathHeight += (center.y - mousePos.y - pathHeight) / 10;
+        for (var i = 1; i < points; i++) {
+          var sinSeed = event.count + (i + (i % 10)) * 100;
+          var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
+          var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
+          path.segments[i].point.y = yPos;
+        }
+        if (smooth) path.smooth({ type: "continuous" });
+      }
+
+      function onMouseMove(event) {
+        mousePos = event.point;
+      }
+
+      function onMouseDown(event) {
+        smooth = !smooth;
+        if (!smooth) {
+          // If smooth has been turned off, we need to reset
+          // the handles of the path:
+          for (var i = 0, l = path.segments.length; i < l; i++) {
+            var segment = path.segments[i];
+            segment.handleIn = segment.handleOut = null;
+          }
+        }
+      }
+
+      // Reposition the path whenever the window is resized:
+      function onResize(event) {
+        initializePath();
+      }
+    </script>
   </body>
 </html>
